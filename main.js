@@ -10,7 +10,7 @@ const quoteChange=async()=>{
     const data= await random.json();
     console.log(data);
     h1.innerText=data.content;
-    p.innerText=data.author; 
+    p.innerText=`- ${data.author}`; 
     container.style.backgroundColor=color[count]
     count++;
     console.log(count);
